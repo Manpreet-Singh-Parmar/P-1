@@ -95,6 +95,22 @@
   overflow-wrap: anywhere;
 }
 
+/* Narrow screens: label above value so long filenames never crowd. */
+@media (max-width: 560px) {
+  .fileList {
+    gap: var(--space-3);
+  }
+
+  .fileRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .fileRow dd {
+    margin-top: var(--space-1);
+  }
+}
+
 .fileName {
   font-family: var(--font-mono);
 }

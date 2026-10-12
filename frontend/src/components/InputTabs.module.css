@@ -60,3 +60,16 @@
     display: none;
   }
 }
+
+/* Very small phones: tighter tabs so both stay on one line. */
+@media (max-width: 400px) {
+  .tabs {
+    gap: var(--space-1);
+  }
+
+  .tab {
+    gap: var(--space-1);
+    padding: var(--space-3) var(--space-2);
+    font-size: var(--text-small);
+  }
+}
