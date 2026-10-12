@@ -35,7 +35,7 @@ export default function AppHeader({ language, onLanguageChange }: AppHeaderProps
     <header className={styles.header}>
       <div className={styles.topRule} aria-hidden="true" />
 
-      <div className={styles.bar}>
+      <div className={`${styles.bar} ${menuOpen ? styles.barOpen : ""}`}>
         <div className={styles.identity}>
           <NavLink to="/" className={styles.wordmark} aria-label="ScamShield — home">
             ScamShield
@@ -77,47 +77,47 @@ export default function AppHeader({ language, onLanguageChange }: AppHeaderProps
               </li>
             ))}
           </ul>
-
-          <div className={styles.tools}>
-            <div className={styles.languageToggle} role="group" aria-label="Interface language">
-              <button
-                type="button"
-                className={`${styles.languageButton} ${
-                  language === "en" ? styles.languageButtonActive : ""
-                }`}
-                aria-pressed={language === "en"}
-                onClick={() => onLanguageChange("en")}
-              >
-                EN
-              </button>
-              <span className={styles.languageDivider} aria-hidden="true">
-                /
-              </span>
-              <button
-                type="button"
-                className={`${styles.languageButton} ${
-                  language === "hi" ? styles.languageButtonActive : ""
-                }`}
-                aria-pressed={language === "hi"}
-                onClick={() => onLanguageChange("hi")}
-              >
-                हिं
-              </button>
-            </div>
-
-            <p className={styles.privacy}>
-              <ShieldCheck size={14} aria-hidden="true" className={styles.privacyIcon} />
-              <span className={styles.privacyLabel}>Privacy</span>
-              <span className={styles.privacyNote}>
-                Processed in-session
-                <span className={styles.statusDot} data-status={backendStatus} aria-hidden="true" />
-                <span className="visually-hidden">
-                  Backend {statusCopy[backendStatus]}
-                </span>
-              </span>
-            </p>
-          </div>
         </nav>
+
+        <div className={styles.tools}>
+          <div className={styles.languageToggle} role="group" aria-label="Interface language">
+            <button
+              type="button"
+              className={`${styles.languageButton} ${
+                language === "en" ? styles.languageButtonActive : ""
+              }`}
+              aria-pressed={language === "en"}
+              onClick={() => onLanguageChange("en")}
+            >
+              EN
+            </button>
+            <span className={styles.languageDivider} aria-hidden="true">
+              /
+            </span>
+            <button
+              type="button"
+              className={`${styles.languageButton} ${
+                language === "hi" ? styles.languageButtonActive : ""
+              }`}
+              aria-pressed={language === "hi"}
+              onClick={() => onLanguageChange("hi")}
+            >
+              हिं
+            </button>
+          </div>
+
+          <p className={styles.privacy}>
+            <ShieldCheck size={14} aria-hidden="true" className={styles.privacyIcon} />
+            <span className={styles.privacyLabel}>Privacy</span>
+            <span className={styles.privacyNote}>
+              Processed in-session
+              <span className={styles.statusDot} data-status={backendStatus} aria-hidden="true" />
+              <span className="visually-hidden">
+                Backend {statusCopy[backendStatus]}
+              </span>
+            </span>
+          </p>
+        </div>
       </div>
       <div className={styles.bottomRule} aria-hidden="true" />
     </header>

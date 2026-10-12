@@ -164,3 +164,19 @@
     min-width: 320px;
   }
 }
+
+/* Narrow screens: label above value so nothing wraps mid-word. */
+@media (max-width: 560px) {
+  .metaList {
+    gap: var(--space-3);
+  }
+
+  .metaRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .metaRow dd {
+    margin-top: var(--space-1);
+  }
+}
