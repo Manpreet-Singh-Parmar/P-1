@@ -1,0 +1,60 @@
+/* ============================================================
+   ScamShield AI — design tokens
+   Investigative case-file aesthetic: paper ground, ink text,
+   hairline rules, one restrained accent.
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --color-background: #f7f5f0;
+  --color-panel: #fcfbf8;
+  --color-panel-inset: #f2efe8;
+  --color-border: #dcd8cf;
+  --color-border-strong: #bfbaae;
+
+  /* Ink */
+  --color-text: #24231f;
+  --color-text-secondary: #77736b;
+
+  /* Single accent + muted success */
+  --color-accent: #b54432;
+  --color-accent-soft: #f3e3df;
+  --color-success: #536b57;
+  --color-success-soft: #e4e9e2;
+
+  /* Typography */
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+    Georgia, "Times New Roman", serif;
+  --font-sans: Inter, "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --text-micro: 0.6875rem; /* 11px — section labels */
+  --text-small: 0.8125rem; /* 13px — meta, notes */
+  --text-body: 0.9375rem; /* 15px — body copy */
+  --text-lead: 1.0625rem; /* 17px — intro paragraph */
+  --text-h3: 1.125rem; /* 18px — sub headings */
+  --text-h2: 1.5rem; /* 24px — section headings */
+  --text-h1: 2.125rem; /* 34px — page heading */
+
+  --tracking-label: 0.14em;
+  --leading-body: 1.7;
+  --leading-lead: 1.75;
+
+  /* Layout */
+  --column-width: 1100px;
+  --gutter: 1.25rem;
+  --rule: 1px;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --radius: 2px; /* near-square, archival */
+}

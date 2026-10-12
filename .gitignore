@@ -17,6 +17,15 @@ pnpm-debug.log*
 .env
 .env.production
 
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+*.egg-info/
+
 # macOS-specific files
 .DS_Store
 

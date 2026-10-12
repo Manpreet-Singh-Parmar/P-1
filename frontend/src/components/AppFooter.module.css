@@ -1,0 +1,25 @@
+.footer {
+  border-top: var(--rule) solid var(--color-border);
+  background-color: var(--color-panel);
+}
+
+.inner {
+  max-width: var(--column-width);
+  margin: 0 auto;
+  padding: var(--space-5) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.line {
+  font-size: var(--text-small);
+  color: var(--color-text);
+}
+
+.note {
+  font-size: var(--text-micro);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+}
